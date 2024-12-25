@@ -42,6 +42,7 @@ body {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
+    margin-left: 40px;
 }
 
 .navbar-link:hover {
