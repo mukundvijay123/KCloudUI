@@ -1,0 +1,78 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+  
+/* Horizontal Navbar */
+.horizontal-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+.navbar-section {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo-img{
+    width:50px;
+    border-radius: 5px;
+}
+/* Logo */
+.navbar-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* Links */
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #dcdcdc; /* Light gray on hover */
+}
+
+/* Buttons */
+.navbar-actions .navbar-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 16px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-actions .navbar-button-primary {
+    background-color: white;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.navbar-button:hover {
+    background-color: white;
+    color: #007BFF;
+}
+
+.navbar-button-primary:hover {
+    background-color: #0056b3;
+    color: white;
+}
