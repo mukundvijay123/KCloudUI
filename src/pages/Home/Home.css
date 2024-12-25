@@ -2,7 +2,6 @@
 body {
     height: 100%;
     margin: 0;
-    background: linear-gradient(to bottom, #ffffff, #078bce);;
     display: flex;
     flex-direction: column;
 }
@@ -19,7 +18,7 @@ body {
 .center-box {
     text-align: center;
     padding: 20px;
-    background-color:  #007bff86;
+    background-color:  #1480de86;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -36,6 +35,3 @@ h2 {
     color: #1e0ec4bb;
 }
 
-.green-text {
-    color:#29BEB0;
-}
