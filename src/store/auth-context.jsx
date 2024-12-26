@@ -8,7 +8,7 @@ const AuthContext = createContext();
 // API Base URL (change to your backend URL)
 const API_URL = 'http://your-api-url.com';
 
-function AuthProvider({ children }) {
+export function AuthProvider({ children }) {
     
     const [authState, setAuthState] = useState({
       isLoggedIn: false,
@@ -24,12 +24,15 @@ function AuthProvider({ children }) {
         }
 
     },[])
-
+    const test=async (name)=>{
+        setAuthState({ company_username:name,})
+        console.log(authState)
+    }
     const login =async (companyUsername,company_password)=>{
         try{
             const formData=new FormData();
-            FormData.append('company_username',companyUsername);
-            FormData.append('company_password',company_password);
+            formData.append('company_username',companyUsername);
+            formData.append('company_password',company_password);
             const response= await fetch(`${API_URL}/api/v1/user/login`,{
                 method:'POST',
                 body: formData,
@@ -64,12 +67,11 @@ function AuthProvider({ children }) {
 
 
     return(
-        <AuthContext.Provider value={{authState,login,logout}}>
+        <AuthContext.Provider value={{authState,login,test,logout}}>
             {children}
         </AuthContext.Provider> 
     )
 
 }    
 
-
-export default  AuthProvider
+export const useAuth = () => useContext(AuthContext);
