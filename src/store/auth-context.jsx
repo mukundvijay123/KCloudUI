@@ -1,12 +1,12 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
-
+import {domain,loginUrl} from '../config.js'
 
 // Create context with an object that holds multiple fields
 const AuthContext = createContext();
 
 
 // API Base URL (change to your backend URL)
-const API_URL = 'http://your-api-url.com';
+const LOGIN_URL = `http://${domain}${loginUrl}`;
 
 export function AuthProvider({ children }) {
     
@@ -24,16 +24,14 @@ export function AuthProvider({ children }) {
         }
 
     },[])
-    const test=async (name)=>{
-        setAuthState({ company_username:name,})
-        console.log(authState)
-    }
+
+
     const login =async (companyUsername,company_password)=>{
         try{
             const formData=new FormData();
             formData.append('company_username',companyUsername);
             formData.append('company_password',company_password);
-            const response= await fetch(`${API_URL}/api/v1/user/login`,{
+            const response= await fetch(LOGIN_URL,{
                 method:'POST',
                 body: formData,
             });
@@ -67,7 +65,7 @@ export function AuthProvider({ children }) {
 
 
     return(
-        <AuthContext.Provider value={{authState,login,test,logout}}>
+        <AuthContext.Provider value={{authState,login,logout}}>
             {children}
         </AuthContext.Provider> 
     )

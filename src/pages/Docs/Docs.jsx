@@ -1,12 +1,9 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar.jsx";
-import { useAuth } from "../../store/auth-context.jsx";
 import "./Docs.css";
 
 function Docs() {
 
-    const { authState, login } = useAuth();
-    console.log(authState)
     return (
         <>
             <Navbar />
