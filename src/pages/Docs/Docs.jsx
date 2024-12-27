@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar.jsx";
-import "./Docs.css";
+import "./Docs.css"
 
 function Docs() {
+
     return (
         <>
             <Navbar />
