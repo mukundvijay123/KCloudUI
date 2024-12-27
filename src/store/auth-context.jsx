@@ -40,8 +40,9 @@ export function AuthProvider({ children }) {
             if (!response.ok) {
                 throw new Error(`Error: ${response.status} - ${response.statusText}`);
             }
-
+            
             const data = await response.text();
+            console.log(data)
             if(data==='Login successful'){
                 setAuthState({isAuthenticated:true,company_username:companyUsername})
                 localStorage.setItem('isLoggedIn','true')

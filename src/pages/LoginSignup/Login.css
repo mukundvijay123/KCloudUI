@@ -1,0 +1,84 @@
+/* Ensure the page takes full height and removes default margin */
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7fa; /* Light background color for contrast */
+    font-family: Arial, sans-serif;
+}
+
+/* Center the main content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the center box */
+.center-box-login {
+    text-align: center;
+    padding: 40px;
+    background-color: #1480de86;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    color: #1e0ec4bb;
+    box-sizing: border-box;
+}
+
+/* Style for headings */
+h1 {
+    margin: 0 0 20px;
+    font-size: 2.5em;
+    color: #1e0ec4bb;
+}
+
+/* Paragraph styling */
+p {
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Form group for inputs */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #1e0ec4bb;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.login-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #1e0ec4bb;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0c0880;
+}
