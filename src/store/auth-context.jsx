@@ -19,7 +19,7 @@ export function AuthProvider({ children }) {
         const isLoggedIn=localStorage.getItem('isLoggedIn')
         const companyUsername=localStorage.getItem('company_username')
 
-        if (isLoggedIn==='true' & companyUsername!=null){
+        if (isLoggedIn==='true' && companyUsername!=null){
             setAuthState({isLoggedIn:true,company_username:companyUsername})
         }
 
@@ -44,7 +44,7 @@ export function AuthProvider({ children }) {
             const data = await response.text();
             console.log(data)
             if(data==='Login successful'){
-                setAuthState({isAuthenticated:true,company_username:companyUsername})
+                setAuthState({isLoggedIn:true,company_username:companyUsername})
                 localStorage.setItem('isLoggedIn','true')
                 localStorage.setItem('company_username',companyUsername)
             }else{
