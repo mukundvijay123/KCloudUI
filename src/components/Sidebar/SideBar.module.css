@@ -1,0 +1,97 @@
+/* Sidebar container */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  color: #333;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  bottom: 0;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  transition: transform 0.3s ease; /* Smooth transition for hiding */
+}
+
+.sidebarHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebarLogo {
+  width: 50px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.sidebarLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarLink {
+  display: block;
+  text-decoration: none;
+  color: #007BFF;
+  font-size: 1.1em;
+  margin: 15px 0;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebarLink:hover {
+  background-color: #f1f1f1;
+  color: #0056b3;
+}
+
+.h2 {
+  font-size: 25px;
+}
+
+/* Sidebar visibility states */
+.visible {
+  transform: translateX(0); /* Sidebar is shown */
+}
+
+.hidden {
+  transform: translateX(-95%); /* Sidebar is hidden */
+}
+
+/* Arrow Button to control sidebar visibility */
+.toggleArrow {
+  position: absolute;
+  top: 50%;
+  left: -25px; /* Position the arrow outside the sidebar */
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 50%;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+
+.toggleArrow:hover {
+  background-color: #0056b3;
+}
+
+/* Arrow Directions */
+
+.arrowLeft {
+  left: 240px; 
+}
+
+
+.arrowRight {
+  left: -25px; 
+}
+
