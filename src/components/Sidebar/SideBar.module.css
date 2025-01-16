@@ -60,7 +60,7 @@
 }
 
 .hidden {
-  transform: translateX(-100%); /* Sidebar is hidden */
+  transform: translateX(-95%); /* Sidebar is hidden */
 }
 
 /* Arrow Button to control sidebar visibility */

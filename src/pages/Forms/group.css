@@ -1,0 +1,109 @@
+/* Ensure the page takes full height and removes default margin */
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7fa; /* Light background color for contrast */
+    font-family: Arial, sans-serif;
+}
+
+/* Center the main content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust for any header or fixed navbar */
+}
+
+/* Style the center box */
+.center-box-group {
+    text-align: center;
+    padding: 40px;
+    background-color: #1480de86; /* Light blue background */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    color: #1e0ec4bb; /* Light purple text */
+    box-sizing: border-box;
+}
+
+/* Style for headings */
+h1 {
+    margin: 0 0 20px;
+    font-size: 2.5em;
+    color: #1e0ec4bb; /* Light purple */
+}
+
+/* Paragraph styling */
+h6 {
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Form group for inputs */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #1e0ec4bb; /* Light purple */
+}
+
+/* Input field styles */
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Styling for radio buttons and labels */
+.radio-action {
+    display: flex; /* Makes the radio buttons appear in a row */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adds space between radio buttons */
+    margin-bottom: 20px; /* Adds space below radio buttons */
+}
+
+.radio-action label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #1e0ec4bb; /* Light purple */
+}
+
+.radio-action input[type="radio"] {
+    margin-right: 8px; /* Space between radio button and label */
+}
+
+/* Button styling */
+button.btn-primary {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #1e0ec4bb; /* Light purple background */
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #0c0880; /* Darker purple on hover */
+}
+
+button.btn-primary:focus {
+    outline: none; /* Removes focus outline */
+}

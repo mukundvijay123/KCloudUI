@@ -5,7 +5,7 @@ import { useAuth } from "../../store/auth-context";
 
 function SideBar() {
   const { authState } = useAuth();
-  const [isSidebarVisible, setSidebarVisible] = useState(true); // State to control sidebar visibility
+  const [isSidebarVisible, setSidebarVisible] = useState(false); // State to control sidebar visibility
 
   const toggleSidebar = () => {
     setSidebarVisible(!isSidebarVisible); // Toggle the sidebar visibility
