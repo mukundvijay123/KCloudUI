@@ -5,7 +5,8 @@ import About from '../pages/About/About.jsx';
 import Docs from '../pages/Docs/Docs.jsx';
 import Login from '../pages/LoginSignup/Login.jsx';
 import { SignUp } from '../pages/LoginSignup/Signup.jsx';
-import GroupForm from '../pages/Forms/group.jsx';
+import DeviceForm from '../pages/Forms/devices/device.jsx';
+import GroupForm from '../pages/Forms/group/group.jsx';
 
 function AppRoutes() {
     return (
@@ -16,6 +17,7 @@ function AppRoutes() {
          <Route path="/login" element={<Login/>}/>
          <Route path="/signup" element={<SignUp/>}/>
          <Route path="/groups" element={<GroupForm/>}/>
+         <Route path="/devices" element={<DeviceForm/>}/>
       </Routes>
     );
 }
