@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { useAuth } from "../../store/auth-context";
-import Navbar from "../../components/Navbar/Navbar";
-import SideBar from "../../components/Sidebar/Sidebar";
-import { domain,groupUrl } from "../../config";
+import Navbar from "../../../components/Navbar/Navbar";
+import SideBar from "../../../components/Sidebar/Sidebar";
 import "./group.css"
+import { useAuth } from "../../../store/auth-context";
+import { domain,groupUrl } from "../../../config";
 
 
 const GROUP_URL=`http://${domain}${groupUrl}`;
@@ -120,7 +120,11 @@ function GroupForm() {
     );
   }
 
-  return null;
+  return (
+    <div>
+      <p>Page Not Found</p>
+    </div>
+  );
 }
 
 export default GroupForm;
